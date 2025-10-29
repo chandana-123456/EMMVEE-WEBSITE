@@ -5,7 +5,7 @@ import Sidebar from "../../Components/sidebar/sidebar";
 function About() {
    return (
     <div className="write">
-      <h1>Welcome to Emmvee</h1>
+      <h1>Welcome to Emmvee/Emmvee Technologies</h1>
       <div>
       <img src="/images/Emmvee.png" alt="" />
       </div>
