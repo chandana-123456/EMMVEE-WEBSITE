@@ -1,0 +1,65 @@
+/* Post.css */
+
+.post-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Title */
+.post-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #004c97; /* Emmvee blue tone */
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ff8c00; /* orange accent line */
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* Paragraph text */
+.post-container p {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* Top image styling */
+.topImg {
+  width: 30%;
+  height: 50%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.topImg:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .post-container {
+    padding: 20px;
+    margin: 40px 10px;
+  }
+
+  .post-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .post-container p {
+    font-size: 1rem;
+  }
+}
+

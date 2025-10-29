@@ -1,0 +1,79 @@
+.contact {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  padding: 40px 80px;
+  box-sizing: border-box;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-logo {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.contact-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  border-bottom: 2px solid #ffb100;
+  padding-bottom: 8px;
+}
+
+/* Grid layout for the contact cards */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.contact-icon {
+  color: #ffb100;
+  font-size: 18px;
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-info i {
+  color: #ffb100;
+  margin-right: 8px;
+}

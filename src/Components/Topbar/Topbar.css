@@ -1,0 +1,120 @@
+.topbar {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #ddd;
+  padding-top: 24px;
+  gap: 25px;
+  /* box-sizing: border-box; */
+
+  /* Background image setup */
+  background-image: url("/images/Emmvee_Solar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Social Icons + Logo Container */
+.topLeft {
+  display: flex;
+  /* align-items: center; */
+  gap: 15px;
+}
+
+/* ✅ FIXED LOGO IMAGE STYLE */
+.topImg {
+  width: 80px;             /* Adjust as needed */
+  /* height: 80px;            Keeps it square */
+  object-fit: contain;     /* Ensures no distortion */
+  border-radius: 8px;      /* Optional: rounded corners */
+  /* background-color: transparent; */
+}
+
+/* Search Icon */
+.topSearchIcon {
+  font-size: 22px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease;
+ 
+}
+
+.topSearchIcon:hover {
+  color: #0073e6;
+}
+
+/* Social Icons */
+.topIcon {
+  font-size: 22px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.topIcon:hover {
+  color: #0073e6;
+}
+
+/* Navigation List (center) */
+.topList {
+  list-style: none;
+  display: flex;
+  align-items: bottom;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.topListItem {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: hsl(0, 0%, 13%);
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.topListItem:hover {
+  color: #0073e6;
+}
+footer {
+  position: fixed;         /* Stays at the bottom even when scrolling */
+  left: 0;                 /* Align to the left edge */
+  bottom: 0;               /* Stick to the bottom */
+  width: 100%;             /* Full width across the page */
+  background-color: #222;  /* Dark background for contrast */
+  color: #fff;
+  text-align: left;        /* Align text to the left */
+  padding: 10px 20px;      /* Some space inside */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Subtle top shadow */
+  z-index: 100;            /* Keeps footer above other elements */
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Align text & links to the left */
+  gap: 8px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footerLink {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #fff;
+}

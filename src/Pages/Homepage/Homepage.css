@@ -1,0 +1,15 @@
+home {
+  display: flex;
+}
+.home {
+  background-image: url("/images/Emmvee.png"); /* Path from public folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* make sure it fills the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* optional, for better text visibility */
+}

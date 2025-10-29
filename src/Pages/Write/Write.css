@@ -1,0 +1,14 @@
+/* Container */
+.write {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  background-color: lab(97.85% 1.16 0.94); /* subtle background */
+  min-height: 100vh;
+}
+
+
+ 

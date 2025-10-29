@@ -1,0 +1,30 @@
+.singlePost {
+  display: flex;
+  justify-content: flex-end; /* moves content to the right */
+  align-items: bottom;       /* centers content vertically */
+  height: 0vh;             /* makes it take full screen height */
+  padding-right: 50px;      /* adjust spacing from the right edge */
+  box-sizing: border-box;
+}
+
+.singlePostWrapper {
+  width: 50%; /* optional: controls how wide the content area is */
+  text-align: bottom;
+}
+
+.singlePostImg {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.singlePostTitle {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+}
+
+.singlePostInfo {
+  font-size: 1rem;
+  color: hsl(254, 50%, 36%);
+}

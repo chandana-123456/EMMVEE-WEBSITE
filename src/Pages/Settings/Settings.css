@@ -1,0 +1,131 @@
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.settingsWrapper {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.settingsWrapper:hover {
+  transform: translateY(-4px);
+}
+
+.settingsTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.settingsUpdateTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0056d2;
+}
+
+.settingsDeleteTitle {
+  font-size: 16px;
+  color: #e63946;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.settingsDeleteTitle:hover {
+  color: #c1121f;
+}
+
+/* Profile Picture Section */
+.settingsPP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.settingsPP img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.settingsPP label {
+  margin-top: 12px;
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Fields */
+.settingsForm label {
+  font-weight: 600;
+  color: #333;
+}
+
+.settingsForm input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settingsForm input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Update Button */
+.settingsSubmitButton {
+  margin-top: 20px;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.settingsSubmitButton:hover {
+  background: linear-gradient(90deg, #0056d2, #00aaff);
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .settingsWrapper {
+    padding: 25px;
+  }
+
+  .settingsUpdateTitle {
+    font-size: 24px;
+  }
+
+  .settingsForm input {
+    font-size: 15px;
+  }
+}

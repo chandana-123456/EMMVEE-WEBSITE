@@ -1,0 +1,68 @@
+.logout-page {
+  min-height: 100vh;
+  background-image: url("/images/solar-background.png"); /* use your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.logout-container {
+  background: rgba(255, 255, 255, 0.92); /* white glass effect */
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 40px 60px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  max-width: 450px;
+}
+
+.logout-container h1 {
+  font-size: 2rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.logout-container p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.logout-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logout-buttons button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-buttons .confirm {
+  background-color: #00796b;
+  color: white;
+}
+
+.logout-buttons .confirm:hover {
+  background-color: #004d40;
+}
+
+.logout-buttons .cancel {
+  background-color: #ddd;
+  color: #333;
+}
+
+.logout-buttons .cancel:hover {
+  background-color: #bbb;
+}

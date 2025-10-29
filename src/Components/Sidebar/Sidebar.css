@@ -1,0 +1,128 @@
+
+/* === Sidebar Container === */
+.Sidebar {
+  flex: 3;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 16px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+
+  /* 🌈 Pixel-Shaded Gradient Background */
+  background: linear-gradient(135deg, #f0f0f0 0%, #e3e3e3 25%, #d9d9d9 50%, #e3e3e3 75%, #f0f0f0 100%);
+  background-size: 40px 40px; /* creates the pixel pattern effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* === Sidebar Sections === */
+.sidebarItem {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.sidebarTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0073e6;
+  margin-bottom: 15px;
+  display: block;
+  border-top: 2px solid #0073e6;
+  border-bottom: 2px solid #0073e6;
+  padding: 8px 0;
+  letter-spacing: 1px;
+}
+
+/* === Sidebar Image === */
+.sidebarItem img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin: 15px 0;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Sidebar Text === */
+.sidebarItem p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* === Category List === */
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarListItem {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebarListItem .link {
+  text-decoration: none;
+  color: #222;
+}
+
+.sidebarListItem:hover {
+  transform: scale(1.05);
+}
+
+.sidebarListItem:hover .link {
+  color: #0073e6;
+}
+
+/* === Social Icons === */
+.sidebarSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.sidebarIcon {
+  font-size: 26px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebarIcon:hover {
+  color: #0073e6;
+  transform: scale(1.2);
+}
+
+/* === Responsive Sidebar === */
+@media (max-width: 768px) {
+  .Sidebar {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .sidebarTitle {
+    font-size: 18px;
+  }
+
+  .sidebarItem p {
+    font-size: 14px;
+  }
+
+  .sidebarIcon {
+    font-size: 22px;
+  }
+}
